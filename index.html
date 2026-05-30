@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cours complet - Économie monétaire et financière | Pr. Errachid Majidi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f5f7fb;
+            font-family: 'Segoe UI', 'Roboto', 'Georgia', serif;
+            line-height: 1.55;
+            color: #1e2a3e;
+            padding: 2rem 1rem;
+        }
+        .page-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px -12px rgba(0,0,0,0.15);
+            overflow: hidden;
+            padding: 2rem 2rem 3rem 2rem;
+        }
+        h1 {
+            font-size: 2.2rem;
+            text-align: center;
+            color: #0a2b3e;
+            border-bottom: 3px solid #2c7da0;
+            display: inline-block;
+            width: auto;
+            margin: 0 auto 1rem auto;
+            padding-bottom: 0.3rem;
+        }
+        .title-block {
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+        .subtitle {
+            color: #2c7da0;
+            font-weight: 500;
+            font-size: 1.1rem;
+            margin-top: 0.5rem;
+        }
+        h2 {
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+            border-left: 6px solid #2c7da0;
+            color: #0f3b4f;
+        }
+        h3 {
+            font-size: 1.4rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: #1f5068;
+            padding-left: 0.3rem;
+        }
+        h4 {
+            font-size: 1.2rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            color: #2c6e8f;
+            font-weight: 600;
+        }
+        .section-card {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 0.9rem;
+            text-align: justify;
+        }
+        ul, ol {
+            margin: 0.8rem 0 1rem 1.8rem;
+        }
+        li {
+            margin: 0.4rem 0;
+        }
+        .formula {
+            background: #eef2f5;
+            padding: 0.2rem 0.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', 'Consolas', monospace;
+            font-weight: 600;
+            font-size: 1rem;
+            display: inline-block;
+            margin: 0.2rem 0;
+        }
+        .formula-block {
+            background: #eef2f5;
+            padding: 0.8rem 1rem;
+            border-radius: 12px;
+            margin: 1rem 0;
+            font-family: monospace;
+            font-size: 1rem;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-weight: 500;
+        }
+        .exercise {
+            background: #fef9e6;
+            border-left: 6px solid #e6a017;
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 16px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+        }
+        .exercise strong:first-child {
+            color: #c46b0a;
+            font-size: 1.1rem;
+        }
+        .solution {
+            background: #eaf7ea;
+            border-left: 6px solid #2b7e3a;
+            padding: 1rem 1.5rem;
+            margin: 1rem 0 1.5rem 0;
+            border-radius: 16px;
+        }
+        .solution strong {
+            color: #1e6b2f;
+        }
+        hr {
+            margin: 2rem 0;
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #cbd5e1, #2c7da0, #cbd5e1);
+        }
+        .badge {
+            background: #2c7da0;
+            color: white;
+            font-size: 0.75rem;
+            border-radius: 40px;
+            padding: 0.2rem 0.8rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #f9fafc;
+            border-radius: 16px;
+            overflow: hidden;
+        }
+        th, td {
+            border: 1px solid #cbd5e6;
+            padding: 0.75rem;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background-color: #e2edf2;
+            font-weight: 700;
+        }
+        @media (max-width: 700px) {
+            .page-container {
+                padding: 1.2rem;
+            }
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+        footer {
+            margin-top: 2.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: #5f7f9c;
+            border-top: 1px solid #cbd5e1;
+            padding-top: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+<div class="page-container">
+    <div class="title-block">
+        <h1>Économie monétaire et financière I</h1>
+        <div class="subtitle">Pr. Errachid Majidi — Semestre 3 (2022-2023) — Cours complet avec exercices corrigés</div>
+    </div>
+
+    <!-- CHAPITRE INTRODUCTIF -->
+    <h2>Chapitre introductif : La double réalité de la monnaie</h2>
+    <p>La monnaie est un objet simple et familier (on l’utilise tous les jours), mais elle cache une réalité complexe et abstraite.</p>
+    <p>Elle est source de controverses entre économistes :</p>
+    <ul>
+        <li><strong>J.S. Mill</strong> (classique) : la monnaie est insignifiante, sans rôle économique majeur.</li>
+        <li><strong>Keynes</strong> (dans <em>Théorie générale de l’emploi, de l’intérêt et de la monnaie</em>) : elle joue un rôle primordial dans l’activité économique.</li>
+    </ul>
+    <p><strong>Étymologie :</strong> du latin <em>moneta</em> (lié au verbe <em>moneo</em> = avertir). Liaison historique : l’atelier monétaire romain se trouvait dans le temple de la déesse Junon Moneta (« l’avertisseuse »).</p>
+    <p><em>(Aucune relation mathématique dans ce chapitre)</em></p>
+
+    <!-- CHAPITRE 1 -->
+    <h2>Chapitre 1 : Définitions, caractéristiques, origines et formes de la monnaie</h2>
+    
+    <h3>1. Trois définitions de la monnaie</h3>
+    <ul>
+        <li><strong>Chameau :</strong> « La monnaie est l’ensemble des actifs acceptés partout, par tous et en tout temps pour régler les dettes issues des échanges. » → met en avant la <strong>confiance</strong>.</li>
+        <li><strong>Définition fonctionnelle :</strong> « La monnaie est tout moyen qui permet l’extinction d’une dette et le règlement d’un achat. » → donne deux pouvoirs : pouvoir d’achat (économique) et pouvoir libératoire (juridique).</li>
+        <li><strong>Perroux :</strong> « La monnaie est un instrument de paiement indéterminé, général et immédiat. »</li>
+    </ul>
+
+    <h3>2. Quatre caractéristiques principales</h3>
+    <ul>
+        <li><strong>Obligatoire :</strong> le créancier ou vendeur ne peut pas la refuser.</li>
+        <li><strong>Indéterminé :</strong> elle permet d’acheter n’importe quel bien ou éteindre n’importe quelle dette.</li>
+        <li><strong>Général / universel :</strong> acceptée par tous sur un territoire donné (contrairement aux bons d’achat limités).</li>
+        <li><strong>Effet immédiat :</strong> dès le paiement, la dette est éteinte ou le bien acquis (instantanéité).</li>
+    </ul>
+
+    <h3>3. Origine : du troc à la monnaie</h3>
+    <p>Dans les sociétés primitives : <strong>troc</strong> (échange direct bien contre bien). Inconvénient majeur : nécessité d’une <strong>double coïncidence des désirs</strong>. Coûts de transaction selon Clower (1969) : coûts d’attente, stockage, gardiennage. Solution partielle : foires périodiques. Apparition de la <strong>monnaie marchandise</strong> : bien reconnu par tous comme intermédiaire.</p>
+    <p><strong>Simplification du système des prix :</strong></p>
+    <div class="formula-block">Troc : pour <em>n</em> biens → <strong>n(n-1)/2 prix relatifs</strong><br>Avec monnaie : <strong>(n-1) prix absolus</strong><br>Exemple avec 3 biens (pain, sucre, huile) : 3 prix relatifs → 2 prix absolus si le pain est monnaie.</div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 1 :</strong><br>
+        Une économie produit 5 biens (blé, poisson, sel, viande, tissu).<br>
+        1. Combien de prix relatifs faudrait-il connaître en l’absence de monnaie (troc) ?<br>
+        2. Si la monnaie (le sel) est choisie comme équivalent général, combien de prix absolus faudra-t-il ?
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. n = 5 → n(n-1)/2 = (5×4)/2 = <strong>10 prix relatifs</strong>.<br>
+        2. Avec monnaie : n-1 = <strong>4 prix absolus</strong> (prix du blé en sel, prix du poisson en sel, etc.).
+    </div>
+
+    <h3>4. Les formes de la monnaie</h3>
+    <h4>A. Monnaie matérielle — a. Monnaie marchandise</h4>
+    <p>Biens choisis pour leur valeur d’usage, rareté, divisibilité, reconnaissance facile. Exemples historiques : bétail, épi d’orge, feuille de thé, tabac, coquillages, pierres précieuses, haches, sel (origine du mot « salaire »). Exemple moderne : cigarette comme monnaie marchandise (prisonniers de guerre, hyperinflation).</p>
+    <h4>b. Monnaie métallique</h4>
+    <p>Qualités (Malthus, 1820) : divisibilité, inaltérabilité, malléabilité. Apparition : VIIe siècle av. J.-C., royaume de Lydie. Évolution : monnaie pesée → monnaie comptée → monnaie frappée. Systèmes : bimétallisme (or + argent, loi de Gresham) puis monométallisme. Actuellement : monnaie divisionnaire (valeur faciale > valeur intrinsèque).</p>
+
+    <div class="exercise">
+        <strong>📘 Exercice 2 (Loi de Gresham) :</strong><br>
+        Pays bimétallique avec cours légal fixant 1 g d’or = 20 g d’argent. Sur le marché international, 1 g d’or vaut 22 g d’argent.<br>
+        1. Quelle monnaie est « bonne » ? Laquelle est « mauvaise » ?<br>
+        2. Quelle monnaie les agents vont-ils utiliser pour payer ? Laquelle vont-ils thésauriser ?<br>
+        3. Quel phénomène va se produire ?
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. L’or est « bon » (valeur marchande 22 > officielle 20). L’argent est « mauvais ».<br>
+        2. Ils paieront avec l’argent (mauvaise monnaie) et thésauriseront l’or.<br>
+        3. La mauvaise monnaie chasse la bonne : l’argent circule, l’or disparaît de la circulation.
+    </div>
+
+    <h4>B. Monnaie papier ou fiduciaire · C. Monnaie scripturale · D. Monnaie électronique</h4>
+    <p>Fiduciaire (confiance) : trois phases (certificats, billets non convertibles, cours forcé). Scripturale (écriture) : dépôts à vue/terme, chèque, virement, carte bancaire, avis de prélèvement. Électronique : porte-monnaie électronique, monnaie virtuelle (suppose un compte bancaire).</p>
+
+    <h3>5. Les fonctions de la monnaie</h3>
+    <ul>
+        <li><strong>Intermédiaire des échanges :</strong> brise le troc, réduit les coûts, offre pouvoir libératoire.</li>
+        <li><strong>Unité de compte :</strong> étalon de mesure, passage prix relatifs → absolus, comparaisons dans l’espace/temps.</li>
+        <li><strong>Réserve de valeur :</strong> préserve la valeur dans le temps, liquidité, protection contre l’incertitude (Keynes).</li>
+    </ul>
+    <p><strong>Conclusion :</strong> un objet économique n’est vraiment monnaie que s’il remplit ces trois fonctions.</p>
+
+    <!-- CHAPITRE 2 -->
+    <h2>Chapitre 2 : La masse monétaire et ses agrégats</h2>
+    <p><strong>Règles générales (Maroc, Bank Al Maghrib) :</strong> agrégats ne comportent que les avoirs des agents non financiers résidents (ANFR). Exclusion : non-résidents, Banque centrale, banques commerciales, administration centrale.</p>
+    <h3>1. Agrégats monétaires (M1, M2, M3)</h3>
+    <ul>
+        <li><strong>M1 :</strong> monnaie divisionnaire + fiduciaire + dépôts à vue.</li>
+        <li><strong>M2 :</strong> M1 + placements à vue rémunérés (comptes carnets, livrets).</li>
+        <li><strong>M3 :</strong> M2 + placements à terme (comptes à terme, bons à échéance fixe, certificats de dépôts, pensions, dépôts en devises, OPCVM monétaires).</li>
+    </ul>
+    <h3>2. Agrégats de placements liquides (PL1, PL2, PL3) et liquidité totale</h3>
+    <h3>3. Rôle des agrégats – Vitesse de circulation (VCM) et taux de liquidité</h3>
+    <div class="formula-block">VCM = PIB / M3 &nbsp;&nbsp;&nbsp; (nombre de paiements par unité monétaire par an)<br>Taux de liquidité = 1 / VCM = M3 / PIB</div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 3 :</strong><br>
+        PIB nominal = 1 200 milliards de dirhams, M3 = 300 milliards de dirhams.<br>
+        1. Calculez la vitesse de circulation de la monnaie.<br>
+        2. Interprétez (combien de jours en moyenne un dirham reste-t-il sans être utilisé ?).
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. VCM = 1 200 / 300 = <strong>4</strong>.<br>
+        2. 360 jours / 4 = <strong>90 jours</strong> (un dirham change de main tous les 90 jours en moyenne).
+    </div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 4 :</strong><br>
+        Mêmes données (PIB = 1 200 Mds, M3 = 300 Mds). Calculez le taux de liquidité et interprétez.
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        Taux de liquidité = M3/PIB = 300/1 200 = <strong>0,25 (25 %)</strong>. La monnaie en circulation représente 25 % du PIB ; plus le taux est élevé, plus l’économie est liquide.
+    </div>
+
+    <!-- CHAPITRE 3 -->
+    <h2>Chapitre 3 : La création monétaire</h2>
+    <h3>1. Définition et caractéristiques</h3>
+    <p>Création monétaire = augmentation de la quantité de monnaie en circulation (hausse M3). Augmente le pouvoir d’achat des ANFR. Deux caractéristiques : lie agent financier à ANFR ; augmente pouvoir d’achat global.</p>
+    <h3>2. Sources de création monétaire</h3>
+    <p><strong>Principales :</strong> octroi de crédit par les banques commerciales (création ex nihilo, « les crédits font les dépôts ») + entrée de devises. <strong>Secondaires :</strong> achat de titres financiers, achat de biens physiques, règlements du Trésor public.</p>
+    <h3>3. Acteurs : banques commerciales (rôle principal), Trésor public, Banque centrale.</h3>
+    <h3>4. Liquidité bancaire et multiplicateur/diviseur</h3>
+    <div class="formula-block">
+        <strong>Multiplicateur :</strong> MM = k × BM &nbsp;avec &nbsp;k = (1+b)/(b+r)<br>
+        b = fuite en billets, r = taux de réserve obligatoire<br>
+        <strong>Diviseur :</strong> BM = MM / k
+    </div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 5 :</strong><br>
+        r = 0,1 (10 %), b = 0,05 (5 %).<br>
+        1. Calculez le multiplicateur k.<br>
+        2. Si la Banque centrale injecte 100 millions de dirhams de base monétaire (BM), quel est l’accroissement de MM ?
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. k = (1+0,05)/(0,05+0,10) = 1,05/0,15 = <strong>7</strong>.<br>
+        2. ΔMM = 7 × 100 = <strong>700 millions de dirhams</strong>.
+    </div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 6 :</strong><br>
+        Dépôt initial = 1 000 000 DH, r = 20 %, b = 0.<br>
+        1. Réserve obligatoire ?<br>
+        2. Montant maximal du prêt ?<br>
+        3. Création monétaire totale (processus infini) ?
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. Réserve = 200 000 DH.<br>
+        2. Prêt max = 800 000 DH.<br>
+        3. k = 1/r = 5 → Création totale = 1 000 000 × 5 = <strong>5 000 000 DH</strong>.
+    </div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 7 (diviseur) :</strong><br>
+        Reprendre b=0,05, r=0,10, k=7. Si MM augmente de 350 millions sous l’effet de la demande de crédits, de combien BM doit-elle augmenter ?
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        ΔBM = ΔMM / k = 350 / 7 = <strong>50 millions de dirhams</strong>. La demande de crédits entraîne une création monétaire de 350 M, nécessitant 50 M de base monétaire supplémentaire.
+    </div>
+
+    <!-- CHAPITRE 4 -->
+    <h2>Chapitre 4 : La politique monétaire</h2>
+    <p><strong>Définition :</strong> ensemble des moyens pour maintenir la monnaie en circulation à un niveau compatible avec les équilibres internes et externes.</p>
+    <h3>1. Objectifs finals : stabilité des prix (priorité), équilibre externe, croissance, plein emploi.</h3>
+    <h3>Objectifs intermédiaires : masse monétaire, taux d’intérêt, taux de change.</h3>
+    <div class="formula-block">Taux d’intérêt ↑ → MM ↓, investissement ↓, épargne ↑<br>Taux d’intérêt ↓ → MM ↑, investissement ↑, épargne ↓</div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 8 (équilibre I=S) :</strong><br>
+        I = 200 – 10r , S = 50 + 5r (r en %).<br>
+        1. Taux d’intérêt d’équilibre.<br>
+        2. Si la BC baisse le taux de 2 points en dessous de l’équilibre, écart I – S ?
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. 200 – 10r = 50 + 5r → 150 = 15r → r = <strong>10 %</strong>.<br>
+        2. r = 8 % → I = 120, S = 90 → écart = <strong>30</strong> (excès d’investissement).
+    </div>
+
+    <h3>2. Instruments : réescompte, open market/pensions, réserves obligatoires, encadrement du crédit (abandonné), sélectivité du crédit.</h3>
+    <h3>3. L’inflation</h3>
+    <p>Définition : hausse généralisée, régulière et durable des prix. Causes : par les coûts, par la demande, importée. Conséquences : incertitude, baisse pouvoir d’achat, spéculation, destruction richesse.</p>
+    <div class="formula-block"><strong>Théorie quantitative :</strong> M × V = P × T</div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 9 :</strong><br>
+        M = 500 Mds DH, V = 4, T = 200 millions d’unités.<br>
+        1. Calculez P.<br>
+        2. Si M augmente de 20 % (V,T constants), quel est le nouveau P ? Interprétez.
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. 500×4 = P×200 → P = <strong>10 DH</strong>.<br>
+        2. M’ = 600 → 600×4 = P’×200 → P’ = <strong>12 DH</strong> (hausse de 20 %). Inflation proportionnelle.
+    </div>
+
+    <div class="exercise">
+        <strong>📘 Exercice 10 (dévaluation) :</strong><br>
+        Passage de 1 EUR = 9 MAD à 1 EUR = 12 MAD.<br>
+        1. Pourcentage de dévaluation du dirham par rapport à l’euro.<br>
+        2. Pourcentage d’appréciation de l’euro.
+    </div>
+    <div class="solution">
+        <strong>✔ Solution :</strong><br>
+        1. Pouvoir d’achat MAD : avant 1/9 EUR, après 1/12 EUR. Perte = (1/12 – 1/9)/(1/9) = -0,25 → <strong>dévaluation de 25 %</strong>.<br>
+        2. Appréciation euro = (12-9)/9 = 1/3 ≈ <strong>+33,3 %</strong>.
+    </div>
+
+    <!-- TABLEAU RECAPITULATIF -->
+    <h3>Récapitulatif des relations mathématiques du cours (avec renvoi aux exercices)</h3>
+    <table>
+        <thead>
+            <tr><th>Concept</th><th>Formule</th><th>Exercice</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Nombre de prix relatifs (troc)</td><td>n(n-1)/2</td><td>Ex. 1</td></tr>
+            <tr><td>Nombre de prix absolus (monnaie)</td><td>n-1</td><td>Ex. 1</td></tr>
+            <tr><td>Loi de Gresham</td><td>–</td><td>Ex. 2</td></tr>
+            <tr><td>Vitesse de circulation</td><td>VCM = PIB / M3</td><td>Ex. 3</td></tr>
+            <tr><td>Taux de liquidité</td><td>M3 / PIB</td><td>Ex. 4</td></tr>
+            <tr><td>Multiplicateur</td><td>k = (1+b)/(b+r)</td><td>Ex. 5, 6</td></tr>
+            <tr><td>Multiplicateur (sans fuite)</td><td>k = 1/r</td><td>Ex. 6</td></tr>
+            <tr><td>Création monétaire totale</td><td>ΔMM = k × ΔBM</td><td>Ex. 5</td></tr>
+            <tr><td>Diviseur</td><td>ΔBM = ΔMM / k</td><td>Ex. 7</td></tr>
+            <tr><td>Équilibre I = S</td><td>–</td><td>Ex. 8</td></tr>
+            <tr><td>Théorie quantitative</td><td>M × V = P × T</td><td>Ex. 9</td></tr>
+            <tr><td>Taux de dévaluation</td><td>(1/nouveau – 1/ancien) / (1/ancien)</td><td>Ex. 10</td></tr>
+        </tbody>
+    </table>
+
+    <p style="margin-top: 1.5rem;"><em>Ce document constitue un cours complet, détaillé, structuré chapitre par chapitre, avec applications numériques et corrigés pour chaque relation mathématique importante.</em></p>
+    <footer>
+        © Cours d’économie monétaire et financière I — Pr. Errachid Majidi — Synthèse intégrale avec exercices.
+    </footer>
+</div>
+</body>
+</html>
