@@ -177,46 +177,33 @@
         }
 
         .formula {
-            background: #f8fafc;
+            background: #f1f5f9;
             border-radius: 1rem;
-            border: 1px solid #e2e8f0;
-            padding: 0.9rem 1.2rem;
+            border-left: 6px solid #0f172a;
+            padding: 1rem 1.2rem;
             margin: 0.8rem 0;
             font-family: 'SF Mono', 'Courier New', monospace;
-            font-size: 0.9rem;
-            color: #1e293b;
-            text-align: center;
+            font-size: 0.95rem;
+            color: #0f172a;
+            text-align: left;
             font-weight: 500;
         }
-
+        .formula p {
+            margin: 0.25rem 0;
+        }
+        .formula .example {
+            margin-top: 0.5rem;
+            font-size: 0.85rem;
+            color: #2c5f7a;
+            border-top: 1px solid #cbd5e1;
+            padding-top: 0.5rem;
+        }
         .formula-ar {
             font-size: 0.75rem;
             color: #4b5563;
             margin-top: 0.5rem;
             direction: rtl;
             text-align: right;
-        }
-
-        .example-box {
-            background: #f0f9ff;
-            border-radius: 0.9rem;
-            padding: 0.7rem 1rem;
-            margin: 0.8rem 0 0.5rem;
-            border-left: 4px solid #0284c7;
-            font-size: 0.85rem;
-        }
-        .example-title {
-            font-weight: 700;
-            color: #0369a1;
-            display: inline-block;
-            margin-right: 0.5rem;
-        }
-        .example-ar {
-            font-size: 0.75rem;
-            color: #2c5f7a;
-            direction: rtl;
-            text-align: right;
-            margin-top: 0.3rem;
         }
 
         .badge {
@@ -330,6 +317,11 @@
             margin: -1px;
             overflow: hidden;
         }
+        hr {
+            margin: 1rem 0;
+            border: none;
+            border-top: 1px solid #e2e8f0;
+        }
     </style>
 </head>
 <body>
@@ -385,7 +377,12 @@
     <div class="item"><div class="item-fr"><b>Coûts de transaction</b> : fatigue, temps perdu, incertitude. <b>Coûts d'attente</b> : frustration, stockage, gardiennage (particulièrement lourds pour les biens périssables).</div><div class="item-ar">تكاليف المعاملات والانتظار.</div></div>
     <div class="item"><div class="item-fr">L'apparition de la <b>monnaie marchandise</b> brise le troc. Chaque individu échange son surplus contre ce bien intermédiaire, qui devient <b>l'équivalent général</b> : il exprime la valeur d'échange de toutes les autres marchandises.</div><div class="item-ar">ظهور نقود-السلعة: المكافئ العام.</div></div>
     <div class="warn"><b>Avantage mathématique clé :</b> Sans monnaie, une économie de n biens comporte n(n−1)/2 prix relatifs. Avec la monnaie, on n’a plus que (n−1) prix absolus. Exemple pour trois biens : trois prix relatifs sans monnaie, deux prix absolus avec la monnaie.<div class="warn-ar">الميزة الرياضية: بدون نقود n(n−1)/2 سعر نسبي، مع النقود (n−1) سعر مطلق فقط.</div></div>
-    <div class="example-box"><span class="example-title">📐 Exemple concret :</span> Soit 3 biens (blé, drap, bois). Sans monnaie : 3 prix relatifs (blé/drap, blé/bois, drap/bois). Avec une monnaie unique, on fixe le prix du blé = 10€, du drap = 5€, du bois = 2€ → 3 prix absolus, soit (n−1) ? Ici n=3 → 2 seulement si on exprime tout en unité monétaire (blé, drap). Le calcul exact : avec monnaie on a n prix, mais on peut en fixer un =1 (numéraire) → (n−1) indépendants.<div class="example-ar">مثال: 3 سلع، بدون نقود 3 أسعار نسبية، مع النقود (سعران مطلقان فقط).</div></div>
+    <!-- Relation mathématique clarifiée + exemple -->
+    <div class="formula">
+      <p><strong>📐 Relation :</strong> Nombre de prix relatifs = n(n−1)/2 &nbsp;→&nbsp; Nombre de prix absolus = n−1</p>
+      <p><strong>Exemple (n=3 biens) :</strong> blé, drap, bois.<br>Sans monnaie : 3×2/2 = 3 prix (blé/drap, blé/bois, drap/bois).<br>Avec monnaie : seulement 2 prix absolus (ex: blé = 10€, drap = 5€ → le prix du bois s'en déduit).</p>
+      <div class="formula-ar">مثال: 3 سلع، بدون نقود 3 أسعار نسبية، مع النقود سعران مطلقان فقط.</div>
+    </div>
   </div>
 </div>
 
@@ -410,7 +407,7 @@
   <div class="block"><div class="block-title">💾 3. Réserve de valeur</div><div class="item"><div class="item-fr">La monnaie a la capacité de préserver sa valeur dans le temps entre deux transactions. Contrairement au troc (transactions instantanées), elle peut être conservée pour une utilisation ultérieure, reportant ainsi le pouvoir d'achat. Keynes souligne que la monnaie constitue un lien entre le présent et l'avenir. Sa qualité supplémentaire par rapport à d'autres biens (or, immeubles) est sa liquidité : elle est immédiatement disponible et utilisable dans les règlements.</div><div class="item-ar">مخزن للقيمة: تحتفظ بقيمتها مع الوقت، كينز: النقود رابط بين الحاضر والمستقبل، سيولة فورية.</div></div></div>
 </div>
 
-<!-- ========== CHAPITRE II — AGRÉGATS (avec relations claires + exemples) ========== -->
+<!-- ========== CHAPITRE II — AGRÉGATS (avec VCM clarifiée) ========== -->
 <div class="section" id="ch2">
   <div class="chapter-title">Chapitre II — La masse monétaire et ses agrégats</div>
   <div class="arabic-title">الفصل الثاني — الكتلة النقدية ومجمعاتها</div>
@@ -418,25 +415,66 @@
   <div class="block"><div class="block-title">🇲🇦 Agrégats monétaires (Bank Al-Maghrib, normes FMI)</div>
     <div class="item"><div class="item-fr"><b>M1</b> : monnaie divisionnaire (pièces), monnaie fiduciaire (billets détenus par les ANFR) et monnaie scripturale (comptes créditeurs à vue).</div><div class="item-ar">م1: النقود التقسيمية + الائتمانية + الكتابية.</div></div>
     <div class="item"><div class="item-fr"><b>M2</b> : M1 augmenté des placements à vue rémunérés non mobilisables par chèque (comptes sur carnets des banques, livrets de la Caisse d'épargne nationale).</div><div class="item-ar">م2 = م1 + توظيفات تحت الطلب مدرة للفائدة.</div></div>
-    <div class="item"><div class="item-fr"><b>M3</b> : M2 augmenté des placements à terme émis par les banques (comptes à terme, bons à échéance fixe, certificats de dépôts, valeurs données en pension, dépôts en devises, dépôts à terme auprès du Trésor, titres d'OPCVM monétaires). Bank Al-Maghrib utilise M3 pour mesurer la masse monétaire car il inclut la monnaie au sens étroit (M1) et la quasi‑monnaie.</div><div class="item-ar">م3 = م2 + التوظيفات لأجل.</div></div>
+    <div class="item"><div class="item-fr"><b>M3</b> : M2 augmenté des placements à terme émis par les banques (comptes à terme, bons à échéance fixe, certificats de dépôts, valeurs données en pension, dépôts en devises, dépôts à terme auprès du Trésor, titres d'OPCVM monétaires). Bank Al-Maghrib utilise M3 pour mesurer la masse monétaire car il inclut la monnaie au sens étroit (M1) et la quasi‑monnaie (actifs facilement convertibles en moyens de paiement sans risque de perte en capital).</div><div class="item-ar">م3 = م2 + التوظيفات لأجل: الحسابات لأجل، شهادات الإيداع، OPCVM النقدية.</div></div>
   </div>
-  <div class="block"><div class="block-title">📈 Agrégats de placements liquides (depuis 1998)</div><div class="item"><div class="item-fr"><b>PL1</b> : titres d'OPCVM contractuels, titres de créances négociables émis par le Trésor public et les sociétés de financement.<br><b>PL2</b> : titres émis par les OPCVM obligations.<br><b>PL3</b> : titres émis par les OPCVM actions et OPCVM diversifiés.</div><div class="item-ar">PL1، PL2، PL3: مجمعات التوظيفات السائلة.</div></div><div class="formula">Liquidité de l'économie = Agrégats monétaires (M3) + Agrégats de placements liquides (PL1 + PL2 + PL3)<div class="formula-ar">سيولة الاقتصاد = المجمعات النقدية + مجمعات التوظيفات السائلة.</div></div></div>
-  <div class="block"><div class="block-title">⚡ Vitesse de circulation de la monnaie (VCM) et taux de liquidité</div><div class="item"><div class="item-fr">La VCM mesure le nombre de paiements qu'effectue une unité monétaire au cours d'une année. Formule : <b>V = PIB / M3</b>. Le taux de liquidité est l'inverse : <b>L = M3 / PIB</b>.</div><div class="item-ar">سرعة التداول = الناتج المحلي الإجمالي ÷ م3. معدل السيولة = م3 ÷ الناتج المحلي.</div></div>
-    <div class="example-box"><span class="example-title">📊 Exemple chiffré :</span> Si PIB = 1200 Mds€ et M3 = 600 Mds€ → V = 1200/600 = 2. Un euro circule 2 fois par an (change de main tous les 6 mois en moyenne). Taux de liquidité = 600/1200 = 0,5 → la monnaie représente 50% du PIB.<div class="example-ar">مثال: ناتج 1200، م3=600 → سرعة التداول =2، كل وحدة نقدية تستعمل مرتين سنويًا.</div></div>
+  <div class="block"><div class="block-title">📈 Agrégats de placements liquides (depuis 1998)</div><div class="item"><div class="item-fr"><b>PL1</b> : titres d'OPCVM contractuels, titres de créances négociables émis par le Trésor public et les sociétés de financement, bons du Trésor, bons de sociétés de financement, billets de trésorerie.<br><b>PL2</b> : titres émis par les OPCVM obligations.<br><b>PL3</b> : titres émis par les OPCVM actions et OPCVM diversifiés.</div><div class="item-ar">PL1، PL2، PL3: مجمعات التوظيفات السائلة.</div></div><div class="formula">
+    <p><strong>Liquidité de l'économie = Agrégats monétaires (M3) + Agrégats de placements liquides (PL1 + PL2 + PL3)</strong></p>
+    <div class="formula-ar">سيولة الاقتصاد = المجمعات النقدية + مجمعات التوظيفات السائلة.</div>
+  </div></div>
+  <div class="block"><div class="block-title">⚡ Vitesse de circulation de la monnaie (VCM) et taux de liquidité</div>
+    <div class="item"><div class="item-fr">La VCM mesure le nombre de paiements qu'effectue une unité monétaire au cours d'une année (fréquence à laquelle la monnaie change de main). Elle se calcule approximativement par le rapport du PIB à M3. Exemple : une VCM de 18 signifie qu'un dirham a permis 18 transactions dans l'année, soit un changement de main tous les 20 jours (360 jours divisés par 18). Le taux de liquidité de l'économie est l'inverse : M3 divisé par le PIB.</div><div class="item-ar">سرعة التداول = الناتج المحلي الإجمالي ÷ م3. معدل السيولة = م3 ÷ الناتج المحلي.</div></div>
+    <div class="formula">
+      <p><strong>📐 Relations mathématiques :</strong></p>
+      <p>V = PIB / M3 &nbsp;&nbsp;&nbsp; et &nbsp;&nbsp;&nbsp; Taux de liquidité = M3 / PIB = 1 / V</p>
+      <p><strong>Exemple 1 (donné dans le texte) :</strong> VCM = 18 → Taux de liquidité = 1/18 ≈ 0,0556 (5,56%)<br>Un dirham change de main tous les : 360 jours / 18 = 20 jours.</p>
+      <p><strong>Exemple 2 (chiffres concrets) :</strong> PIB = 1200 Mds€, M3 = 600 Mds€<br>→ V = 1200/600 = 2 (un euro circule 2 fois par an)<br>→ Taux de liquidité = 600/1200 = 0,5 (la monnaie représente 50% du PIB).</p>
+      <div class="formula-ar">مثال: سرعة التداول=18 يعني وحدة نقدية تغير يدها كل 20 يومًا.</div>
+    </div>
   </div>
 </div>
 
-<!-- ========== CHAPITRE III — CRÉATION (multiplicateur & diviseur clarifiés + exemples) ========== -->
+<!-- ========== CHAPITRE III — CRÉATION (multiplicateur & diviseur clarifiés) ========== -->
 <div class="section" id="ch3">
   <div class="chapter-title">Chapitre III — La création monétaire</div>
   <div class="arabic-title">الفصل الثالث — خلق النقود</div>
-  <div class="block"><div class="block-title">📌 Définition et deux caractéristiques</div><div class="item"><div class="item-fr">La <b>création monétaire</b> est un accroissement de la masse monétaire, c'est-à-dire une augmentation du pouvoir d'achat détenu par les agents non financiers résidents. Une opération de création monétaire doit satisfaire deux conditions : (1) elle lie un agent financier à un agent non financier résident ; (2) elle augmente le pouvoir d'achat global des ANFR.</div><div class="item-ar">خلق النقود = زيادة الكتلة النقدية والقدرة الشرائية الإجمالية للفاعلين غير الماليين.</div></div></div>
-  <div class="block"><div class="block-title">💰 Les cinq sources de création monétaire</div><div class="phase-line"><div class="phase-num" style="background:#C0DD97;color:#173404">1</div><div class="phase-text"><div class="phase-fr"><b>L'octroi de crédit par les banques commerciales</b> (source numéro un) : création ex nihilo. Les crédits font les dépôts.</div><div class="phase-ar">منح القروض — خلق من العدم، القروض تصنع الودائع.</div></div></div><div class="phase-line"><div class="phase-num" style="background:#C0DD97;color:#173404">2</div><div class="phase-text"><div class="phase-fr"><b>L'entrée de devises</b> (exportations, transferts). La conversion en monnaie nationale ajoute à la masse monétaire.</div><div class="phase-ar">تدفق العملات الأجنبية.</div></div></div><div class="phase-line"><div class="phase-num">3</div><div class="phase-text"><div class="phase-fr">Achat par une banque d'un titre financier émis par un ANFR.</div><div class="phase-ar">شراء سند مالي من فاعل غير مالي مقيم.</div></div></div><div class="phase-line"><div class="phase-num">4</div><div class="phase-text"><div class="phase-fr">Achat par une banque d'un bien physique auprès d'un ANFR.</div><div class="phase-ar">شراء أصل مادي من فاعل غير مالي.</div></div></div><div class="phase-line"><div class="phase-num">5</div><div class="phase-text"><div class="phase-fr">Règlements du Trésor public aux fonctionnaires et fournisseurs.</div><div class="phase-ar">مدفوعات الخزينة للموظفين/الموردين.</div></div></div>
-  <div class="block"><div class="block-title">✖️ Le multiplicateur de crédit (relation mathématique)</div>
-    <div class="formula">Masse monétaire (MM) = k × Base monétaire (BM)<br>avec k = (1 + b) / (b + r)<br>où b = fuite en billets / dépôts, r = taux de réserve obligatoire</div>
-    <div class="example-box"><span class="example-title">📐 Exemple (réserves obligatoires 20%) :</span> Dépôt initial 1000€. Banque1 : garde 200€ (réserves) → prête 800€. Banque2 : reçoit 800€, garde 160€ → prête 640€. Banque3 : 128€ gardés → prête 512€. Somme des prêts = 800+640+512+... = 4000€ ; total dépôts = 1000 + 800 + 640 + ... = 5000€. Le multiplicateur = 5000 / 1000 = 5 = 1 / 0,20 si b=0.<div class="example-ar">مثال: احتياطي 20%، وديعة أولية 1000 → كتلة نهائية 5000، مضاعف=5.</div></div>
+  <div class="block"><div class="block-title">📌 Définition et deux caractéristiques</div><div class="item"><div class="item-fr">La <b>création monétaire</b> est un accroissement de la masse monétaire, c'est-à-dire une augmentation du pouvoir d'achat détenu par les agents non financiers résidents. Une opération de création monétaire doit satisfaire deux conditions : (1) elle lie un agent financier (banque) à un agent non financier résident ; (2) elle augmente le pouvoir d'achat global des ANFR (et non pas seulement celui d'un agent au détriment d'un autre). Le dépôt ou le retrait de billets n'est qu'une transformation de forme (fiduciaire contre scripturale) et ne constitue donc pas une création monétaire.</div><div class="item-ar">خلق النقود = زيادة الكتلة النقدية والقدرة الشرائية الإجمالية للفاعلين غير الماليين.</div></div></div>
+  <div class="block"><div class="block-title">💰 Les cinq sources de création monétaire</div>
+    <div class="section-label">Deux sources principales</div>
+    <div class="phase-line"><div class="phase-num" style="background:#C0DD97;color:#173404">1</div><div class="phase-text"><div class="phase-fr"><b>L'octroi de crédit par les banques commerciales</b> (source numéro un) : création ex nihilo (à partir de rien) par simple jeu d'écriture. Les crédits font les dépôts. Le remboursement du crédit donne lieu à une destruction monétaire.</div><div class="phase-ar">منح القروض (المصدر الأول) — خلق من العدم، القروض تصنع الودائع.</div></div></div>
+    <div class="phase-line"><div class="phase-num" style="background:#C0DD97;color:#173404">2</div><div class="phase-text"><div class="phase-fr"><b>L'entrée de devises</b> (exportations, transferts des non‑résidents, dépenses des touristes). La conversion des devises en monnaie nationale ajoute une nouvelle quantité à la masse monétaire. La sortie de devises, à l'inverse, détruit de la monnaie.</div><div class="phase-ar">تدفق العملات الأجنبية — الصادرات، التحويلات، السياح.</div></div></div>
+    <div class="section-label">Trois sources secondaires</div>
+    <div class="phase-line"><div class="phase-num">3</div><div class="phase-text"><div class="phase-fr">Achat par une banque commerciale d'un titre financier émis par un ANFR (entreprise, bons du Trésor).</div><div class="phase-ar">شراء سند مالي من فاعل غير مالي مقيم.</div></div></div>
+    <div class="phase-line"><div class="phase-num">4</div><div class="phase-text"><div class="phase-fr">Achat par une banque commerciale d'un bien physique auprès d'un ANFR.</div><div class="phase-ar">شراء أصل مادي من فاعل غير مالي.</div></div></div>
+    <div class="phase-line"><div class="phase-num">5</div><div class="phase-text"><div class="phase-fr">Règlements du Trésor public aux fonctionnaires et fournisseurs de l'État qui possèdent des comptes gérés par lui (jeux d'écritures internes).</div><div class="phase-ar">مدفوعات الخزينة للموظفين/الموردين بحسابات لديها.</div></div></div>
   </div>
-  <div class="block"><div class="block-title">➗ Le diviseur (logique inverse)</div><div class="item"><div class="item-fr">Les banques créent d'abord la monnaie scripturale, puis se refinancent. La masse monétaire est endogène. Base monétaire = MM / k. Exemple : MM = 5000, k=5 → BM = 1000.<div class="item-ar">القاعدة النقدية = الكتلة ÷ المضاعف.</div></div></div>
+  <div class="block"><div class="block-title">🏛️ Les trois acteurs de la création monétaire</div>
+    <div class="item"><div class="item-fr"><b>Banques commerciales</b> : rôle primordial. Elles accordent des crédits ex nihilo, convertissent les devises, achètent des titres financiers et des actifs physiques. Leur pouvoir est limité par trois facteurs : (1) elles ne peuvent pas créer les billets (monopole de la banque centrale, « monnaie centrale ») ; (2) elles subissent des fuites en monnaie centrale (la monnaie prêtée peut être transformée en billets ou transférée à une autre banque) ; (3) elles doivent constituer une réserve obligatoire (un pourcentage des dépôts bloqué à la banque centrale). Pour se refinancer, une banque s'adresse d'abord au marché interbancaire, puis, si nécessaire, à la banque centrale (prêteur en dernier ressort) via le réescompte (cession définitive) ou la mise en pension (cession temporaire).</div><div class="item-ar">البنوك التجارية: دور محوري لكن محدود بالاحتياطي الإلزامي والتسرّبات.</div></div>
+    <div class="item"><div class="item-fr"><b>Trésor public</b> : double pouvoir monétaire. Direct : lorsqu'il crédite les comptes de ses fonctionnaires ou fournisseurs. Indirect : lorsqu'une banque commerciale achète ses bons du Trésor (création monétaire pour le Trésor).</div><div class="item-ar">الخزينة العامة: قوة نقدية مباشرة وغير مباشرة.</div></div>
+    <div class="item"><div class="item-fr"><b>Banque centrale</b> : rôle direct marginal (conversion des devises, avances au Trésor, souscription aux bons du Trésor). Rôle indirect primordial : monopole d'émission des billets, ce qui lui permet de contrôler la monnaie centrale (liquidité bancaire) et, par là, le pouvoir de création monétaire des banques commerciales.</div><div class="item-ar">البنك المركزي: احتكار إصدار الأوراق، يتحكم في السيولة البنكية.</div></div>
+  </div>
+  <div class="block"><div class="block-title">🔢 La liquidité bancaire et ses facteurs</div>
+    <div class="item"><div class="item-fr">La liquidité d'une banque se compose des billets dans ses caisses et de ses avoirs dans son compte courant à la banque centrale. La liquidité bancaire globale (ensemble du système) est la somme de ces éléments pour toutes les banques. Quatre facteurs influencent la liquidité bancaire :</div><div class="item-ar">السيولة البنكية: الأوراق + الأرصدة لدى البنك المركزي.</div></div>
+    <div class="phase-line"><div class="phase-num">1</div><div class="phase-text"><div class="phase-fr"><b>Billets en circulation</b> : les dépôts augmentent la liquidité, les retraits la diminuent (facteur échappant au contrôle de la banque centrale).</div><div class="phase-ar">الأوراق المتداولة: خارج سيطرة البنك المركزي.</div></div></div>
+    <div class="phase-line"><div class="phase-num">2</div><div class="phase-text"><div class="phase-fr"><b>Opérations avec l'extérieur</b> : les échanges excédentaires (entrée de devises) augmentent la liquidité ; les échanges déficitaires la diminuent (facteur échappant au contrôle de la banque centrale).</div><div class="phase-ar">العمليات مع الخارج: خارج سيطرة البنك المركزي.</div></div></div>
+    <div class="phase-line"><div class="phase-num">3</div><div class="phase-text"><div class="phase-fr"><b>Opérations avec l'administration centrale (Trésor public)</b> : lorsque les paiements des clients des banques au Trésor dépassent les versements du Trésor, la liquidité baisse ; l'inverse l'augmente (facteur échappant au contrôle de la banque centrale).</div><div class="phase-ar">العمليات مع الخزينة: خارج سيطرة البنك المركزي.</div></div></div>
+    <div class="phase-line"><div class="phase-num">4</div><div class="phase-text"><div class="phase-fr"><b>Réserves obligatoires</b> : les banques doivent maintenir à la banque centrale un pourcentage de leurs dépôts (taux fixé par la banque centrale). Une hausse du taux réduit la liquidité bancaire, une baisse l'augmente. C'est le <b>seul facteur sous le contrôle direct de la banque centrale</b>.</div><div class="phase-ar">الاحتياطيات الإلزامية: العامل الوحيد الخاضع لسيطرة البنك المركزي.</div></div></div>
+  </div>
+  <div class="block"><div class="block-title">✖️ Le multiplicateur de crédit</div>
+    <div class="item"><div class="item-fr">La banque centrale peut contrôler l'évolution de la masse monétaire en contrôlant la base monétaire (billets en circulation). La masse monétaire est un multiple de la base monétaire (variable exogène). Exemple : un taux de réserve obligatoire de 20 pour cent, un dépôt initial de 1000. La première banque retient 200 (réserves) et prête 800. Ce montant circule et devient un dépôt dans une seconde banque, qui retient 160 et prête 640, et ainsi de suite. Au total, le système bancaire crée 5000. La base monétaire de 1000 a été multipliée par 5 pour obtenir une masse monétaire de 5000. Formellement, si b est le pourcentage des dépôts convertis en billets et r le taux de réserve obligatoire, le multiplicateur est égal à (b+1) divisé par (b+r).</div><div class="item-ar">مضاعف الائتمان: الكتلة = مضاعف القاعدة النقدية.</div></div>
+    <div class="warn">Exemple chiffré : taux de réserve obligatoire de 20 pour cent, dépôt initial de 1000 unités. La banque 1 conserve 200 pour la réserve et accorde un prêt de 800. La banque 2 reçoit 800, conserve 160 et prête 640. La banque 3 reçoit 640, conserve 128 et prête 512. Le processus continue jusqu'à une création totale de 5000 unités. Le multiplicateur est donc de 5.<div class="warn-ar">مثال: نسبة احتياطي 20%، وديعة أولى 1000 → إجمالي 5000، مضاعف = 5.</div></div>
+    <div class="formula">
+      <p><strong>📐 Formule générale :</strong> Multiplicateur k = (1 + b) / (b + r)</p>
+      <p><strong>Exemple (sans fuite b=0, r=20%) :</strong> k = (1+0)/(0+0,2) = 1/0,2 = 5</p>
+      <p><strong>Avec fuite b=10% et r=20% :</strong> k = (1+0,1)/(0,1+0,2) = 1,1/0,3 ≈ 3,67</p>
+      <div class="formula-ar">المضاعف = (1+b)/(b+r)</div>
+    </div>
+  </div>
+  <div class="block"><div class="block-title">➗ Le diviseur</div><div class="item"><div class="item-fr">Logique inverse du multiplicateur. Les banques commerciales n'attendent pas d'avoir des liquidités pour accorder des crédits ; elles créent d'abord la monnaie scripturale, puis se refinancent auprès de la banque centrale. La masse monétaire est alors une variable endogène (déterminée par la demande des ANFR). C'est la base monétaire qui est une division de la masse monétaire : BM = MM / k.</div><div class="item-ar">القاسم: الكتلة النقدية متغير داخلي، القاعدة = الكتلة ÷ k.</div></div>
+    <div class="formula">
+      <p><strong>📐 Relation :</strong> Base monétaire (BM) = Masse monétaire (MM) / multiplicateur (k)</p>
+      <p><strong>Exemple :</strong> MM = 5000, k = 5 → BM = 5000/5 = 1000</p>
+      <div class="formula-ar">مثال: كتلة نقدية 5000، مضاعف=5 → قاعدة نقدية=1000.</div>
+    </div>
   </div>
 </div>
 
@@ -444,11 +482,23 @@
 <div class="section" id="ch4">
   <div class="chapter-title">Chapitre IV — La politique monétaire</div>
   <div class="arabic-title">الفصل الرابع — السياسة النقدية</div>
-  <div class="block"><div class="block-title">🎯 Définition et objectifs finals</div><div class="item"><div class="item-fr"><b>Politique monétaire</b> : ensemble des moyens pour maintenir le stock de monnaie compatible avec les équilibres internes et externes. Quatre objectifs : stabilité des prix, équilibre externe, croissance, plein emploi.</div><div class="item-ar">السياسة النقدية: الحفاظ على التوازنات الداخلية والخارجية.</div></div></div>
-  <div class="block"><div class="block-title">🎯 Objectifs intermédiaires</div><div class="item"><div class="item-fr">Masse monétaire, taux d'intérêt, taux de change.</div><div class="item-ar">الأهداف الوسيطة: الكتلة النقدية، سعر الفائدة، سعر الصرف.</div></div></div>
-  <div class="block"><div class="block-title">🛠️ Les cinq instruments</div><div class="phase-line"><div class="phase-num">1</div><div class="phase-text"><div class="phase-fr"><b>Réescompte</b> : achat d'effets de commerce par la BC. Baisse du taux → crédit moins cher.</div><div class="phase-ar">إعادة الخصم.</div></div></div><div class="phase-line"><div class="phase-num">2</div><div class="phase-text"><div class="phase-fr"><b>Open market</b> : vente/achat de bons du Trésor. Vente → baisse liquidité → hausse taux.</div><div class="phase-ar">السوق المفتوحة.</div></div></div><div class="phase-line"><div class="phase-num">3</div><div class="phase-text"><div class="phase-fr"><b>Réserve obligatoire</b> : hausse du taux → réduction liquidité → frein création monétaire.</div><div class="phase-ar">الاحتياطي الإلزامي.</div></div></div><div class="phase-line"><div class="phase-num">4</div><div class="phase-text"><div class="phase-fr"><b>Encadrement du crédit</b> (abandonné).</div><div class="phase-ar">تأطير الائتمان (تم التخلي عنه).</div></div></div><div class="phase-line"><div class="phase-num">5</div><div class="phase-text"><div class="phase-fr"><b>Politique sélective</b> : crédits aux secteurs prioritaires.</div><div class="phase-ar">انتقائية الائتمان.</div></div></div>
-  <div class="block"><div class="block-title">📉 L'inflation — causes & conséquences</div><div class="item"><div class="item-fr">Trois causes : par les coûts, par la demande, importée. Conséquences : incertitude, spéculation, baisse du pouvoir d'achat.</div><div class="item-ar">التضخم: ارتفاع الأسعار، الأسباب: التكاليف، الطلب، المستورد.</div></div><div class="example-box"><span class="example-title">📉 Exemple inflation importée :</span> Hausse de 30% du pétrole en dollar, euro se déprécie → prix des carburants en France augmente mécaniquement, d'où hausse des prix à la consommation.<div class="example-ar">مثال: ارتفاع النفط 30% وانخفاض اليورو يرفع أسعار المحروقات.</div></div>
+  <div class="block"><div class="block-title">🎯 Définition et objectifs finals (carré magique de Kaldor)</div><div class="item"><div class="item-fr"><b>Politique monétaire</b> : ensemble des moyens mis en œuvre par les autorités monétaires pour maintenir le stock de monnaie en circulation à un niveau compatible avec la sauvegarde des équilibres internes et externes. Les quatre objectifs finals sont : (1) la stabilité des prix (taux d'inflation nul, objectif prioritaire des banques centrales aujourd'hui), (2) l'équilibre externe, (3) la croissance économique, (4) le plein emploi.</div><div class="item-ar">السياسة النقدية: الحفاظ على التوازنات الداخلية والخارجية. الأهداف: استقرار الأسعار، التوازن الخارجي، النمو، التشغيل الكامل.</div></div></div>
+  <div class="block"><div class="block-title">🎯 Objectifs intermédiaires</div><div class="item"><div class="item-fr">Un objectif intermédiaire est un agrégat sur lequel les autorités monétaires ont une influence directe et qui est relié à un objectif final. On en distingue trois : (1) la masse monétaire (objectif quantitatif : surveiller sa progression pour l'adapter à la production nationale), (2) le taux d'intérêt (une hausse réduit la masse monétaire et l'investissement mais augmente l'épargne ; une baisse produit l'effet inverse), (3) le taux de change (défense d'une parité ou dévaluation en cas de déficit structurel ou de perte de compétitivité).</div><div class="item-ar">الأهداف الوسيطة: الكتلة النقدية، سعر الفائدة، سعر الصرف.</div></div></div>
+  <div class="block"><div class="block-title">🛠️ Les cinq instruments de la politique monétaire</div>
+    <div class="phase-line"><div class="phase-num">1</div><div class="phase-text"><div class="phase-fr"><b>Réescompte</b> : achat par la banque centrale des effets de commerce détenus par les banques commerciales. Une baisse du taux de réescompte rend le crédit moins cher et relance l'économie ; une hausse le renchérit et le freine.</div><div class="phase-ar">إعادة الخصم: شراء البنك المركزي لأوراق التجارة.</div></div></div>
+    <div class="phase-line"><div class="phase-num">2</div><div class="phase-text"><div class="phase-fr"><b>Open market et pensions</b> : la banque centrale vend ou achète des bons du Trésor sur le marché interbancaire. Une vente fait baisser les prix, les banques achètent, leur liquidité diminue, le coût du crédit augmente et la création monétaire est freinée. L'achat produit l'effet inverse. Trois types de pensions existent : à 7 jours (initiative de la BC, régulières), à 5 jours (initiative des banques, irrégulières, taux plus élevé), à 24 heures (initiative des deux, lorsque le compte courant d'une banque présente un solde débiteur).</div><div class="phase-ar">السوق المفتوحة والاتفاقيات (7 أيام، 5 أيام، 24 ساعة).</div></div></div>
+    <div class="phase-line"><div class="phase-num">3</div><div class="phase-text"><div class="phase-fr"><b>Réserve obligatoire</b> : obligation pour les banques de bloquer sans intérêts à la banque centrale un pourcentage de leurs dépôts. À l'origine destinée à protéger les déposants, elle est devenue un instrument de politique monétaire. Une hausse du taux réduit la liquidité bancaire et donc la création monétaire ; une baisse l'augmente.</div><div class="phase-ar">الاحتياطي الإلزامي: رفع النسبة يخفض السيولة، خفضها يرفعها.</div></div></div>
+    <div class="phase-line"><div class="phase-num">4</div><div class="phase-text"><div class="phase-fr"><b>Encadrement du crédit</b> : fixation annuelle par la banque centrale du taux de progression des crédits accordés. Avantage : maîtrise de la masse monétaire en période inflationniste. Inconvénients : défavorise les banques dynamiques et les PME, alourdit le coût du crédit en freinant la concurrence. Cette technique a été abandonnée (France en 1987, Maroc en 1991).</div><div class="phase-ar">تأطير الائتمان — تم التخلي عنه (فرنسا 1987، المغرب 1991).</div></div></div>
+    <div class="phase-line"><div class="phase-num">5</div><div class="phase-text"><div class="phase-fr"><b>Politique sélective du crédit</b> : favorise la distribution des crédits vers les secteurs prioritaires (taux bonifiés, avantages fiscaux, réseaux bancaires spécialisés). Avantage : soutien aux secteurs essentiels. Inconvénients : endettement excessif des secteurs ciblés et développement au détriment des autres.</div><div class="phase-ar">انتقائية الائتمان: دعم القطاعات ذات الأولوية بأسعار مدعومة.</div></div></div>
   </div>
+  <div class="block"><div class="block-title">📉 L'inflation</div>
+    <div class="item"><div class="item-fr"><b>Définition</b> : hausse généralisée, régulière et durable des prix, accompagnée d'une baisse durable de la valeur de la monnaie. On l'évalue à partir des variations des prix à la consommation des biens et services.</div><div class="item-ar">التضخم: ارتفاع عام ومنتظم ومستدام للأسعار.</div></div>
+    <div class="section-label">Trois causes principales</div>
+    <div class="phase-line"><div class="phase-num">1</div><div class="phase-text"><div class="phase-fr"><b>Inflation par les coûts</b> : provoquée par une augmentation des coûts de production (salaires, matières premières) que les entreprises répercutent sur leurs prix de vente. Plus facile en situation de monopole, d'oligopole ou de protection contre la concurrence étrangère.</div><div class="phase-ar">التضخم بالتكاليف: ارتفاع تكاليف الإنتاج يُحوَّل لأسعار البيع.</div></div></div>
+    <div class="phase-line"><div class="phase-num">2</div><div class="phase-text"><div class="phase-fr"><b>Inflation par la demande</b> : excédent de la demande globale sur l'offre disponible, ce qui exerce une pression à la hausse sur les prix. Elle peut se combiner à l'inflation par les coûts (hausse des salaires accroît la demande).</div><div class="phase-ar">التضخم بالطلب: فائض الطلب الكلي يضغط على الأسعار.</div></div></div>
+    <div class="phase-line"><div class="phase-num">3</div><div class="phase-text"><div class="phase-fr"><b>Inflation importée</b> : liée aux échanges internationaux (hausse des prix des matières premières à l'international, entrée massive de devises). C'est la forme la plus dangereuse car son origine extérieure la rend difficilement maîtrisable par les autorités monétaires.</div><div class="phase-ar">التضخم المستورد: الأخطر، منشأه الخارجي يجعله عسيرًا على السلطات.</div></div></div>
+    <div class="section-label">Conséquences</div>
+    <div class="item"><div class="item-fr">L'inflation ne pose pas de problème si ses taux restent faibles, stables et conformes aux attentes. Le problème survient avec des taux élevés et volatils : incertitude, impossibilité de faire des calculs rationnels et des projets à long terme, orientation de l'épargne vers des placements spéculatifs (immobilier, achat illégal de devises), et baisse du pouvoir d'achat des consommateurs année après année, ce qui détruit à terme une partie de la richesse nationale.</div><div class="item-ar">العواقب: غموض، مضاربة، انهيار القدرة الشرائية، تدمير الثروة الوطنية.</div></div></div>
 </div>
 
 </div>
